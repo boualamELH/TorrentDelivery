@@ -1,8 +1,14 @@
 language: csharp
 solution: TorrentDelivery.sln
 
+sudo: false
+
+addons:
+  apt:
+    packages:
+      - nunit-console
+      
 install:
-  - sudo apt-get install nunit-console
   - nuget restore TorrentDelivery.sln
 
 script:
