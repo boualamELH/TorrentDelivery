@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using HtmlAgilityPack;
 
-namespace TorrentDelivery
+namespace Basics.API
 {
     class HtmlUtilities
     {
@@ -20,7 +20,7 @@ namespace TorrentDelivery
             {
                 Console.WriteLine(link.Attributes[0].Value);
             }
-
+            throw new NotImplementedException();
         }
         static int Main(string[] args)
         {

@@ -42,11 +42,6 @@
             this.checkForUpdatesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutTheProductToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.s_ep = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.addDate = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.status = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.desc = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -159,51 +154,11 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.name,
-            this.s_ep,
-            this.addDate,
-            this.status,
-            this.desc});
             this.dataGridView1.Location = new System.Drawing.Point(5, 25);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(747, 359);
             this.dataGridView1.TabIndex = 1;
-            // 
-            // name
-            // 
-            this.name.Frozen = true;
-            this.name.HeaderText = "TV Show";
-            this.name.Name = "name";
-            this.name.ReadOnly = true;
-            // 
-            // s_ep
-            // 
-            this.s_ep.HeaderText = "Episode";
-            this.s_ep.Name = "s_ep";
-            this.s_ep.ReadOnly = true;
-            // 
-            // addDate
-            // 
-            this.addDate.HeaderText = "Added at..";
-            this.addDate.Name = "addDate";
-            this.addDate.ReadOnly = true;
-            // 
-            // status
-            // 
-            this.status.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.ColumnHeader;
-            this.status.HeaderText = "Status";
-            this.status.Name = "status";
-            this.status.ReadOnly = true;
-            this.status.Width = 62;
-            // 
-            // desc
-            // 
-            this.desc.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.desc.HeaderText = "";
-            this.desc.Name = "desc";
-            this.desc.ReadOnly = true;
             // 
             // MainForm
             // 
@@ -239,11 +194,6 @@
         private System.Windows.Forms.ToolStripMenuItem settingsToolStripMenuItem;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
-        private System.Windows.Forms.DataGridViewTextBoxColumn name;
-        private System.Windows.Forms.DataGridViewTextBoxColumn s_ep;
-        private System.Windows.Forms.DataGridViewTextBoxColumn addDate;
-        private System.Windows.Forms.DataGridViewTextBoxColumn status;
-        private System.Windows.Forms.DataGridViewTextBoxColumn desc;
     }
 }
 
