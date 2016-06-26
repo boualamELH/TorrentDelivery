@@ -7,12 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MetroFramework.Forms;
 
-namespace TorrentDelivery.GUI
+namespace TorrentDelivery
 {
-    public partial class SettingsForm : Form
+    public partial class Form1 : MetroForm
     {
-        public SettingsForm()
+        public Form1()
         {
             InitializeComponent();
         }

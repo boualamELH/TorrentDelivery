@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <OutputDir>..\OUTPUT\</OutputDir>
+    <BinDebug>obj\Debug\</BinDebug>
+    <BinRelease>bin\Release\</BinRelease>
+    <ObjDebug>obj\Debug\</ObjDebug>
+    <ObjRelease>obj\Release\</ObjRelease>
+  </PropertyGroup>
+  
+  <OutputPath>$(OutputDir)$(BinDebug)$(MSBuildProjectName)\</OutputPath>
+  <BaseIntermediateOutputPath>$(OutputDir)$(ObjDebug)$(MSBuildProjectName)\</BaseIntermediateOutputPath>
+
+  </Project>

@@ -1,49 +1,54 @@
-﻿using System.Data.SQLite;
+﻿using System.Data.Common;
 using System.Threading.Tasks;
-using System.Data.Common;
 
 namespace Basics.SQL
 {
     public class Connection
     {
         #region fileds & ctors
-        private const string dbFile = "tasksDB.sqlite";
-        private const string password = "r@nd0m_Pa55w0rd";
-        private readonly SQLiteConnection dbConnection;
-        private static Connection cnx = null;
+        public readonly System.Data.SQLite.SQLiteConnection sqliteConnection;
+        private const string DB_FILE = "tasks.sqlite";
+        private const string PASSWORD = "r@nd0m_Pa55w0rd";
+        private static Connection cnx;
+
         private Connection()
         {
-            if (!System.IO.File.Exists(dbFile))
+            if (!System.IO.File.Exists(DB_FILE))
             {
-                SQLiteConnection.CreateFile(dbFile);
+                System.Data.SQLite.SQLiteConnection.CreateFile(DB_FILE);
             }
-            dbConnection = new SQLiteConnection(string.Format("Data Source={0};Version=3;Password={1}", dbFile, password));
-            dbConnection.Open();
+            
+            sqliteConnection = new System.Data.SQLite.SQLiteConnection(string.Format("Data Source={0};Version=3;Password={1};", DB_FILE, PASSWORD));
+            sqliteConnection.Open();
+            var sql = "CREATE TABLE torrents (tag VARCHAR(20), url VARCHAR(255), name VARCHAR(255), added DATETIME)";
+            var command = new System.Data.SQLite.SQLiteCommand(sql, sqliteConnection);
+            command.ExecuteNonQuery();
         }
         ~Connection()
         {
-            dbConnection.Close();
+            sqliteConnection.Close();
+            sqliteConnection.Dispose();
         }
         #endregion
 
         #region public methods
-        public static Connection GetConnection()
+        public static Connection CreateInstance()
         {
             return cnx ?? (cnx = new Connection());
         }
         public async Task<int> ExecuteNonQueryAsync(string sql)
         {
-            var sqlCmd = new SQLiteCommand(sql, dbConnection);
+            var sqlCmd = new System.Data.SQLite.SQLiteCommand(sql, sqliteConnection);
             return await sqlCmd.ExecuteNonQueryAsync();
         }
         public int ExecuteNonQuery(string sql)
         {
-            var sqlCmd = new SQLiteCommand(sql, dbConnection);
+            var sqlCmd = new System.Data.SQLite.SQLiteCommand(sql, sqliteConnection);
             return sqlCmd.ExecuteNonQuery();
         }
         public async Task<DbDataReader> ExecuteReaderAsync(string sql)
         {
-            var sqlCmd = new SQLiteCommand(sql, dbConnection);
+            var sqlCmd = new System.Data.SQLite.SQLiteCommand(sql, sqliteConnection);
             return await sqlCmd.ExecuteReaderAsync();
         }
         #endregion

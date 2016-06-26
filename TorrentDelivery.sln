@@ -1,13 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Express 2013 for Windows Desktop
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.25123.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Basics", "Basics\Basics.csproj", "{71262052-E4B5-42E5-81B4-4A8B073A48ED}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TorrentDelivery.GUI", "TorrentDelivery.GUI\TorrentDelivery.GUI.csproj", "{DDAA273B-6EA1-4114-BCFE-D4130F3C3607}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TorrentDelivery", "TorrentDelivery\TorrentDelivery.csproj", "{322AFE9F-72C0-4210-82D9-107C7D0694D4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TorrentDelivery.Service", "TorrentDelivery.Service\TorrentDelivery.Service.csproj", "{E3EA15D5-AF2E-4411-B122-A80F5F60DE85}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cmdcli", "cmdcli\cmdcli.csproj", "{D07CB63E-CFEE-4F72-81C1-A29B4A26EA17}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,14 +19,14 @@ Global
 		{71262052-E4B5-42E5-81B4-4A8B073A48ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{71262052-E4B5-42E5-81B4-4A8B073A48ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{71262052-E4B5-42E5-81B4-4A8B073A48ED}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DDAA273B-6EA1-4114-BCFE-D4130F3C3607}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DDAA273B-6EA1-4114-BCFE-D4130F3C3607}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DDAA273B-6EA1-4114-BCFE-D4130F3C3607}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DDAA273B-6EA1-4114-BCFE-D4130F3C3607}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E3EA15D5-AF2E-4411-B122-A80F5F60DE85}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E3EA15D5-AF2E-4411-B122-A80F5F60DE85}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E3EA15D5-AF2E-4411-B122-A80F5F60DE85}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E3EA15D5-AF2E-4411-B122-A80F5F60DE85}.Release|Any CPU.Build.0 = Release|Any CPU
+		{322AFE9F-72C0-4210-82D9-107C7D0694D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{322AFE9F-72C0-4210-82D9-107C7D0694D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{322AFE9F-72C0-4210-82D9-107C7D0694D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{322AFE9F-72C0-4210-82D9-107C7D0694D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D07CB63E-CFEE-4F72-81C1-A29B4A26EA17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D07CB63E-CFEE-4F72-81C1-A29B4A26EA17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D07CB63E-CFEE-4F72-81C1-A29B4A26EA17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D07CB63E-CFEE-4F72-81C1-A29B4A26EA17}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
