@@ -8,8 +8,6 @@ namespace Basics.COM.KAT
     {
         public List<SearchResult> Search(string query="Captain america civil war")
         {
-            var html = GetHtmlResult();
-            var result = ConvertToSearchResult(html);
             return null;
         }
     }
