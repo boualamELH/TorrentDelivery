@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Basics.P2P
+namespace Basics.P2PCLIENT
 {
     public class TorrentClientException : Exception
     {

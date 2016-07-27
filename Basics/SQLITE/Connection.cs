@@ -1,7 +1,7 @@
 ﻿using System.Data.Common;
 using System.Threading.Tasks;
 
-namespace Basics.SQL
+namespace Basics.SQLITE
 {
     public class Connection
     {
@@ -18,7 +18,7 @@ namespace Basics.SQL
                 System.Data.SQLite.SQLiteConnection.CreateFile(DB_FILE);
             }
             
-            sqliteConnection = new System.Data.SQLite.SQLiteConnection(string.Format("Data Source={0};Version=3;Password={1};", DB_FILE, PASSWORD));
+            sqliteConnection = new System.Data.SQLite.SQLiteConnection($"Data Source={DB_FILE};Version=3;Password={PASSWORD};");
             sqliteConnection.Open();
             var sql = "CREATE TABLE torrents (tag VARCHAR(20), url VARCHAR(255), name VARCHAR(255), added DATETIME)";
             var command = new System.Data.SQLite.SQLiteCommand(sql, sqliteConnection);
