@@ -1,13 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25123.0
+VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Basics", "Basics\Basics.csproj", "{71262052-E4B5-42E5-81B4-4A8B073A48ED}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TorrentDelivery", "TorrentDelivery\TorrentDelivery.csproj", "{322AFE9F-72C0-4210-82D9-107C7D0694D4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cmdcli", "cmdcli\cmdcli.csproj", "{D07CB63E-CFEE-4F72-81C1-A29B4A26EA17}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TorrentDelivery.Test", "TorrentDelivery.Test\TorrentDelivery.Test.csproj", "{235C8BE7-FF0A-4108-B843-3959E95AC431}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{D07CB63E-CFEE-4F72-81C1-A29B4A26EA17}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D07CB63E-CFEE-4F72-81C1-A29B4A26EA17}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D07CB63E-CFEE-4F72-81C1-A29B4A26EA17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{235C8BE7-FF0A-4108-B843-3959E95AC431}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{235C8BE7-FF0A-4108-B843-3959E95AC431}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{235C8BE7-FF0A-4108-B843-3959E95AC431}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{235C8BE7-FF0A-4108-B843-3959E95AC431}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

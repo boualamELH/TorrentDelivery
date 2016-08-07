@@ -30,11 +30,11 @@
         {
             this.metroTabControl1 = new MetroFramework.Controls.MetroTabControl();
             this.metroTabPage1 = new MetroFramework.Controls.MetroTabPage();
-            this.metroTabPage2 = new MetroFramework.Controls.MetroTabPage();
             this.metroButton1 = new MetroFramework.Controls.MetroButton();
-            this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
-            this.metroTile1 = new MetroFramework.Controls.MetroTile();
+            this.metroTabPage2 = new MetroFramework.Controls.MetroTabPage();
             this.metroProgressSpinner1 = new MetroFramework.Controls.MetroProgressSpinner();
+            this.metroTile1 = new MetroFramework.Controls.MetroTile();
+            this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
             this.metroTabControl1.SuspendLayout();
             this.metroTabPage1.SuspendLayout();
             this.metroTabPage2.SuspendLayout();
@@ -66,6 +66,15 @@
             this.metroTabPage1.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage1.VerticalScrollbarSize = 10;
             // 
+            // metroButton1
+            // 
+            this.metroButton1.Location = new System.Drawing.Point(55, 38);
+            this.metroButton1.Name = "metroButton1";
+            this.metroButton1.Size = new System.Drawing.Size(75, 23);
+            this.metroButton1.TabIndex = 2;
+            this.metroButton1.Text = "Ok";
+            this.metroButton1.UseSelectable = true;
+            // 
             // metroTabPage2
             // 
             this.metroTabPage2.Controls.Add(this.metroProgressSpinner1);
@@ -83,23 +92,14 @@
             this.metroTabPage2.VerticalScrollbarHighlightOnWheel = false;
             this.metroTabPage2.VerticalScrollbarSize = 10;
             // 
-            // metroButton1
+            // metroProgressSpinner1
             // 
-            this.metroButton1.Location = new System.Drawing.Point(55, 38);
-            this.metroButton1.Name = "metroButton1";
-            this.metroButton1.Size = new System.Drawing.Size(75, 23);
-            this.metroButton1.TabIndex = 2;
-            this.metroButton1.Text = "Ok";
-            this.metroButton1.UseSelectable = true;
-            // 
-            // metroLabel1
-            // 
-            this.metroLabel1.AutoSize = true;
-            this.metroLabel1.Location = new System.Drawing.Point(64, 68);
-            this.metroLabel1.Name = "metroLabel1";
-            this.metroLabel1.Size = new System.Drawing.Size(29, 19);
-            this.metroLabel1.TabIndex = 2;
-            this.metroLabel1.Text = "Tag";
+            this.metroProgressSpinner1.Location = new System.Drawing.Point(107, 63);
+            this.metroProgressSpinner1.Maximum = 100;
+            this.metroProgressSpinner1.Name = "metroProgressSpinner1";
+            this.metroProgressSpinner1.Size = new System.Drawing.Size(38, 34);
+            this.metroProgressSpinner1.TabIndex = 4;
+            this.metroProgressSpinner1.UseSelectable = true;
             // 
             // metroTile1
             // 
@@ -111,14 +111,14 @@
             this.metroTile1.Text = "I\'m a tile..";
             this.metroTile1.UseSelectable = true;
             // 
-            // metroProgressSpinner1
+            // metroLabel1
             // 
-            this.metroProgressSpinner1.Location = new System.Drawing.Point(107, 63);
-            this.metroProgressSpinner1.Maximum = 100;
-            this.metroProgressSpinner1.Name = "metroProgressSpinner1";
-            this.metroProgressSpinner1.Size = new System.Drawing.Size(38, 34);
-            this.metroProgressSpinner1.TabIndex = 4;
-            this.metroProgressSpinner1.UseSelectable = true;
+            this.metroLabel1.AutoSize = true;
+            this.metroLabel1.Location = new System.Drawing.Point(64, 68);
+            this.metroLabel1.Name = "metroLabel1";
+            this.metroLabel1.Size = new System.Drawing.Size(29, 19);
+            this.metroLabel1.TabIndex = 2;
+            this.metroLabel1.Text = "Tag";
             // 
             // Form1
             // 
